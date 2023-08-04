@@ -1,0 +1,19 @@
+vpc_id = ""
+
+region = ""
+
+# "環境名"-"プロジェクト名"-"リージョン"-"サービス名"
+env = "環境名"  
+area = "リージョン"  
+project = "プロジェクト名" 
+service = "サービス名"
+
+prefix = "{}-{}-{}-{}".format(env, project, area, service)
+
+# usdev /DEV01/US-EAST-1/NAVI/
+# uspub /PUB01/US-EAST-1/NAVI/
+# eudev /DEV01/EU-CENTRAL-1/NAVI/
+# eupub /PUB01/EU-CENTRAL-1/NAVI/
+# audev /AUDEV/US-EAST-1/NAVI/
+# aupub /AUPUB/US-EAST-1/NAVI/
+parameterstore_prefix = ""

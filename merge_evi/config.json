@@ -1,0 +1,239 @@
+{
+    "setting": {
+        "output_path": "evi_sheets.xlsx"
+    },
+    "evidence": [
+        {
+            "sheet_name": "NW",
+            "file_list": [
+                "vpc",
+                "subnet",
+                "igw",
+                "route_table",
+                "endopoint",
+                "eip",
+                "vpc_peering",
+                "natgw",
+                "security_group",
+                "vpc_flowlog"
+            ]
+        },
+        {
+            "sheet_name": "Route53",
+            "file_list": [
+                "route53",
+                "route53_record"
+            ]
+        },
+        {
+            "sheet_name": "IAM",
+            "file_list": [
+                "iam_role",
+                "iam_policy",
+                "iam_role_attached"
+            ]
+        },
+        {
+            "sheet_name": "S3",
+            "file_list": [
+                "s3_list",
+                "s3_accelerate",
+                "s3_acl",
+                "s3_cors",
+                "s3_encryption",
+                "s3_lifecycle",
+                "s3_location",
+                "s3_logging",
+                "s3_notification",
+                "s3_policy",
+                "s3_replication",
+                "s3_tagging",
+                "s3_versioning",
+                "s3_website"
+            ]
+        },
+        {
+            "sheet_name": "ACM",
+            "file_list": [
+                "acm_regional",
+                "acm_cloudfront"
+            ]
+        },
+        {
+            "sheet_name": "CloudWatchLogs",
+            "file_list": [
+                "cloudwatchlog"
+            ]
+        },
+        {
+            "sheet_name": "CloudTrail",
+            "file_list": [
+                "cloudtrail"
+            ]
+        },
+        {
+            "sheet_name": "EC2",
+            "file_list": [
+                "ec2",
+                "ec2_launch_template"
+            ]
+        },
+        {
+            "sheet_name": "APIGateway",
+            "file_list": [
+                "apigw_list",
+                "apigw_resource",
+                "apigw_responses",
+                "apigw_method",
+                "apigw_stage",
+                "apigw_domain",
+                "apigw_usageplan_list",
+                "apigw_usageplan_key",
+                "apigw_vpclink"
+            ]
+        },
+        {
+            "sheet_name": "ELB",
+            "file_list": [
+                "elb",
+                "elb_listener",
+                "elb_target_group"
+            ]
+        },
+        {
+            "sheet_name": "ECR",
+            "file_list": [
+                "ecr"
+            ]
+        },
+        {
+            "sheet_name": "ECS",
+            "file_list": [
+                "ecscl",
+                "ecstk",
+                "ecs_service"
+            ]
+        },
+        {
+            "sheet_name": "Lambda",
+            "file_list": [
+                "lambda"
+            ]
+        },
+        {
+            "sheet_name": "EventBridge",
+            "file_list": [
+                "event"
+            ]
+        },
+        {
+            "sheet_name": "RDS",
+            "file_list": [
+                "rds_global_cluster",
+                "rds_cluster",
+                "rds_instance",
+                "rds_optiongroup",
+                "rds_parametergroup",
+                "rds_subgrp"
+            ]
+        },
+        {
+            "sheet_name": "RDSProxy",
+            "file_list": [
+                "rds_proxy"
+            ]
+        },
+        {
+            "sheet_name": "DynamoDB",
+            "file_list": [
+                "dynamodb"
+            ]
+        },
+        {
+            "sheet_name": "ParameterStore",
+            "file_list": [
+                "parameterstore_list",
+                "parameterstore"
+            ]
+        },
+        {
+            "sheet_name": "SecretsManager",
+            "file_list": [
+                "secretmanager_list",
+                "secretmanager"
+            ]
+        },
+        {
+            "sheet_name": "AutoScaling",
+            "file_list": [
+                "autoscaling_group",
+                "autoscaling_instance"
+            ]
+        },
+        {
+            "sheet_name": "ElastiCashe",
+            "file_list": [
+                "elasticache_subnet",
+                "elasticache_cluster",
+                "elasticache_parametergroup"
+            ]
+        },
+        {
+            "sheet_name": "EFS",
+            "file_list": [
+                "efs"
+            ]
+        },
+        {
+            "sheet_name": "WAF",
+            "file_list": [
+                "waf_acl_regional",
+                "waf_acl_cloudfront"
+            ]
+        },
+        {
+            "sheet_name": "CloudFront",
+            "file_list": [
+                "cloudfront"
+            ]
+        },
+        {
+            "sheet_name": "KinesisDataStream",
+            "file_list": [
+                "kinesis_datastream_describe"
+            ]
+        },
+        {
+            "sheet_name": "Firehose",
+            "file_list": [
+                "firehose_regional",
+                "firehose_cloudfront"
+            ]
+        },
+        {
+            "sheet_name": "SQS",
+            "file_list": [
+                "sqs_attributes"
+            ]
+        },
+        {
+            "sheet_name": "KMS",
+            "file_list": [
+                "kms_aliases",
+                "kms_describe",
+                "kms_policy"
+            ]
+        },
+        {
+            "sheet_name": "DataSync",
+            "file_list": [
+                "datasync_task_list",
+                "datasync_task",
+                "datasync_location_s3_list",
+                "datasync_location_efs_list",
+                "datasync_location_s3",
+                "datasync_location_efs"
+            ]
+        }
+    ]
+}

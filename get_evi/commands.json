@@ -1,0 +1,620 @@
+{
+    "vpc": [
+        "aws",
+        "ec2",
+        "describe-vpcs",
+        "--vpc-ids"
+    ],
+    "subnet": [
+        "aws",
+        "ec2",
+        "describe-subnets",
+        "--filters"
+    ],
+    "igw": [
+        "aws",
+        "ec2",
+        "describe-internet-gateways"
+    ],
+    "route_table": [
+        "aws",
+        "ec2",
+        "describe-route-tables",
+        "--filters"
+    ],
+    "endopoint": [
+        "aws",
+        "ec2",
+        "describe-vpc-endpoints"
+    ],
+    "eip": [
+        "aws",
+        "ec2",
+        "describe-addresses"
+    ],
+    "vpc_peering": [
+        "aws",
+        "ec2",
+        "describe-vpc-peering-connections"
+    ],
+    "natgw": [
+        "aws",
+        "ec2",
+        "describe-nat-gateways"
+    ],
+    "security_group": [
+        "aws",
+        "ec2",
+        "describe-security-groups",
+        "--filters"
+    ],
+    "ec2": [
+        "aws",
+        "ec2",
+        "describe-instances"
+    ],
+    "efs": [
+        "aws",
+        "efs",
+        "describe-file-systems",
+        "--region"
+    ],
+    "elb": [
+        "aws",
+        "elbv2",
+        "describe-load-balancers"
+    ],
+    "elb_target_group": [
+        "aws",
+        "elbv2",
+        "describe-target-groups"
+    ],
+    "elb_listener": [
+        "aws",
+        "elbv2",
+        "describe-listeners",
+        "--load-balancer-arn"
+    ],
+    "route53_list": [
+        "aws",
+        "route53",
+        "list-hosted-zones"
+    ],
+    "route53": [
+        "aws",
+        "route53",
+        "get-hosted-zone",
+        "--id"
+    ],
+    "route53_record": [
+        "aws",
+        "route53",
+        "list-resource-record-sets",
+        "--hosted-zone-id"
+    ],
+    "iam_role_list": [
+        "aws",
+        "iam",
+        "list-roles",
+        "--query",
+        "Roles[?starts_with(RoleName, `{}`)].RoleName"
+    ],
+    "iam_policy_list": [
+        "aws",
+        "iam",
+        "list-policies",
+        "--query",
+        "Policies[?starts_with(PolicyName, `{}`)].{{PolicyName: PolicyName, Arn: Arn}}"
+    ],
+    "iam_role": [
+        "aws",
+        "iam",
+        "get-role",
+        "--role-name"
+    ],
+    "iam_policy": [
+        "aws",
+        "iam",
+        "get-policy",
+        "--policy-arn"
+    ],
+    "iam_policy_version": [
+        "aws",
+        "iam",
+        "get-policy-version",
+        "--policy-arn",
+        "--version-id"
+    ],
+    "iam_role_attached": [
+        "aws",
+        "iam",
+        "list-attached-role-policies",
+        "--role-name"
+    ],
+    "s3_list": [
+        "aws",
+        "s3api",
+        "list-buckets",
+        "--query",
+        "Buckets[?starts_with(Name, `{}`)].Name"
+    ],
+    "s3_acl": [
+        "aws",
+        "s3api",
+        "get-bucket-acl",
+        "--bucket"
+    ],
+    "s3_accelerate": [
+        "aws",
+        "s3api",
+        "get-bucket-accelerate-configuration",
+        "--bucket"
+    ],
+    "s3_cors": [
+        "aws",
+        "s3api",
+        "get-bucket-cors",
+        "--bucket"
+    ],
+    "s3_encryption": [
+        "aws",
+        "s3api",
+        "get-bucket-encryption",
+        "--bucket"
+    ],
+    "s3_lifecycle": [
+        "aws",
+        "s3api",
+        "get-bucket-lifecycle-configuration",
+        "--bucket"
+    ],
+    "s3_location": [
+        "aws",
+        "s3api",
+        "get-bucket-location",
+        "--bucket"
+    ],
+    "s3_logging": [
+        "aws",
+        "s3api",
+        "get-bucket-logging",
+        "--bucket",
+        "--bucket"
+    ],
+    "s3_notification": [
+        "aws",
+        "s3api",
+        "get-bucket-notification-configuration",
+        "--bucket"
+    ],
+    "s3_policy": [
+        "aws",
+        "s3api",
+        "get-bucket-policy",
+        "--bucket"
+    ],
+    "s3_replication": [
+        "aws",
+        "s3api",
+        "get-bucket-replication",
+        "--bucket"
+    ],
+    "s3_tagging": [
+        "aws",
+        "s3api",
+        "get-bucket-tagging",
+        "--bucket"
+    ],
+    "s3_versioning": [
+        "aws",
+        "s3api",
+        "get-bucket-versioning",
+        "--bucket"
+    ],
+    "s3_website": [
+        "aws",
+        "s3api",
+        "get-bucket-website",
+        "--bucket"
+    ],
+    "ecscl_list": [
+        "aws",
+        "ecs",
+        "list-clusters",
+        "--query",
+        "clusterArns[?contains(@,`/{}`)]"
+    ],
+    "ecstk_list": [
+        "aws",
+        "ecs",
+        "list-task-definition-families",
+        "--query",
+        "families[?starts_with(@,`{}`)]"
+    ],
+    "ecscl": [
+        "aws",
+        "ecs",
+        "describe-clusters",
+        "--cluster"
+    ],
+    "ecstk": [
+        "aws",
+        "ecs",
+        "describe-task-definition",
+        "--task-definition"
+    ],
+    "ecr": [
+        "aws",
+        "ecr",
+        "describe-repositories"
+    ],
+    "lambda": [
+        "aws",
+        "lambda",
+        "list-functions"
+    ],
+    "event_list": [
+        "aws",
+        "events",
+        "list-rules"
+    ],
+    "event": [
+        "aws",
+        "events",
+        "describe-rule",
+        "--name"
+    ],
+    "rds_global_cluster": [
+        "aws",
+        "rds",
+        "describe-global-clusters",
+        "--query",
+        "GlobalClusters[?starts_with(GlobalClusterIdentifier, `{}`)]"
+    ],
+    "rds_cluster": [
+        "aws",
+        "rds",
+        "describe-db-clusters",
+        "--query",
+        "DBClusters[?starts_with(DBClusterIdentifier, `{}`)]"
+    ],
+    "rds_instance": [
+        "aws",
+        "rds",
+        "describe-db-instances",
+        "--query",
+        "DBInstances[?starts_with(DBInstanceIdentifier, `{}`)]"
+    ],
+    "rds_subgrp": [
+        "aws",
+        "rds",
+        "describe-db-subnet-groups",
+        "--query",
+        "DBSubnetGroups[?starts_with(DBSubnetGroupName, `{}`)]"
+    ],
+    "rds_optiongroup": [
+        "aws",
+        "rds",
+        "describe-option-groups"
+    ],
+    "rds_proxy": [
+        "aws",
+        "rds",
+        "describe-db-proxies"
+    ],
+    "rds_parametergroup": [
+        "aws",
+        "rds",
+        "describe-db-parameters",
+        "--db-parameter-group-name"
+    ],
+    "rds_cluster_parametergroup": [
+        "aws",
+        "rds",
+        "describe-db-cluster-parameters",
+        "--db-cluster-parameter-group-name"
+    ],
+    "dynamodb_list": [
+        "aws",
+        "dynamodb",
+        "list-tables"
+    ],
+    "dynamodb": [
+        "aws",
+        "dynamodb",
+        "describe-table",
+        "--table-name"
+    ],
+    "apigw_list": [
+        "aws",
+        "apigateway",
+        "get-rest-apis"
+    ],
+    "apigw_resource": [
+        "aws",
+        "apigateway",
+        "get-resources",
+        "--rest-api-id"
+    ],
+    "apigw_responses": [
+        "aws",
+        "apigateway",
+        "get-gateway-responses",
+        "--rest-api-id"
+    ],
+    "apigw_stage": [
+        "aws",
+        "apigateway",
+        "get-stages",
+        "--rest-api-id"
+    ],
+    "apigw_domain": [
+        "aws",
+        "apigateway",
+        "get-domain-names"
+    ],
+    "acm_list_regional": [
+        "aws",
+        "acm",
+        "list-certificates"
+    ],
+    "acm_regional": [
+        "aws",
+        "acm",
+        "describe-certificate",
+        "--certificate-arn"
+    ],
+    "acm_list_cloudfront": [
+        "aws",
+        "acm",
+        "list-certificates",
+        "--region=us-east-1"
+    ],
+    "acm_cloudfront": [
+        "aws",
+        "acm",
+        "describe-certificate",
+        "--region=us-east-1",
+        "--certificate-arn"
+    ],
+    "cloudwatchlog": [
+        "aws",
+        "logs",
+        "describe-log-groups"
+    ],
+    "cloudtrail": [
+        "aws",
+        "cloudtrail",
+        "describe-trails"
+    ],
+    "parameterstore_list": [
+        "aws",
+        "ssm",
+        "describe-parameters",
+        "--parameter-filters",
+        "Key=Name,Values={},Option=Contains"
+    ],
+    "parameterstore": [
+        "aws",
+        "ssm",
+        "get-parameter",
+        "--name"
+    ],
+    "secretmanager_list": [
+        "aws",
+        "secretsmanager",
+        "list-secrets"
+    ],
+    "secretmanager": [
+        "aws",
+        "secretsmanager",
+        "get-secret-value",
+        "--secret-id"
+    ],
+    "autoscaling_group": [
+        "aws",
+        "autoscaling",
+        "describe-auto-scaling-groups",
+        "--query",
+        "AutoScalingGroups[?starts_with(AutoScalingGroupName, `{}`)]"
+    ],
+    "autoscaling_instance": [
+        "aws",
+        "autoscaling",
+        "describe-auto-scaling-instances",
+        "--query",
+        "AutoScalingInstances[?starts_with(AutoScalingGroupName, `{}`)]"
+    ],
+    "elasticache_subnet": [
+        "aws",
+        "elasticache",
+        "describe-cache-subnet-groups"
+    ],
+    "elasticache_cluster": [
+        "aws",
+        "elasticache",
+        "describe-cache-clusters"
+    ],
+    "elasticache_parametergroup": [
+        "aws",
+        "elasticache",
+        "describe-cache-parameters",
+        "--cache-parameter-group-name"
+    ],
+    "waf_list_regional": [
+        "aws",
+        "wafv2",
+        "list-web-acls",
+        "--scope=REGIONAL"
+    ],
+    "waf_list_cloudfront": [
+        "aws",
+        "wafv2",
+        "list-web-acls",
+        "--scope=CLOUDFRONT",
+        "--region=us-east-1"
+    ],
+    "waf_acl_regional": [
+        "aws",
+        "wafv2",
+        "get-web-acl",
+        "--scope REGIONAL",
+        "--name",
+        "--id"
+    ],
+    "waf_acl_cloudfront": [
+        "aws",
+        "wafv2",
+        "get-web-acl",
+        "--scope=CLOUDFRONT",
+        "--region=us-east-1",
+        "--name",
+        "--id"
+    ],
+    "cloudfront": [
+        "aws",
+        "cloudfront",
+        "list-distributions"
+    ],
+    "firehose_list_regional": [
+        "aws",
+        "firehose",
+        "list-delivery-streams"
+    ],
+    "firehose_regional": [
+        "aws",
+        "firehose",
+        "describe-delivery-stream",
+        "--delivery-stream-name"
+    ],
+    "firehose_list_cloudfront": [
+        "aws",
+        "firehose",
+        "list-delivery-streams",
+        "--region=us-east-1"
+    ],
+    "firehose_cloudfront": [
+        "aws",
+        "firehose",
+        "describe-delivery-stream",
+        "--region=us-east-1",
+        "--delivery-stream-name"
+    ],
+    "datasync_task_list": [
+        "aws",
+        "datasync",
+        "list-tasks",
+        "--query",
+        "Tasks[?starts_with(Name, `{}`)].TaskArn"
+    ],
+    "datasync_task": [
+        "aws",
+        "datasync",
+        "describe-task",
+        "--task-arn"
+    ],
+    "datasync_location_s3_list": [
+        "aws",
+        "datasync",
+        "list-locations",
+        "--query",
+        "Locations[?starts_with(LocationUri, `s3`)].LocationArn"
+    ],
+    "datasync_location_efs_list": [
+        "aws",
+        "datasync",
+        "list-locations",
+        "--query",
+        "Locations[?starts_with(LocationUri, `efs`)].LocationArn"
+    ],
+    "datasync_location_s3": [
+        "aws",
+        "datasync",
+        "describe-location-s3",
+        "--location-arn"
+    ],
+    "datasync_location_efs": [
+        "aws",
+        "datasync",
+        "describe-location-efs",
+        "--location-arn"
+    ],
+    "vpc_flowlog": [
+        "aws",
+        "ec2",
+        "describe-flow-logs"
+    ],
+    "ec2_launch_template": [
+        "aws",
+        "ec2",
+        "describe-launch-templates"
+    ],
+    "apigw_usageplan_list": [
+        "aws",
+        "apigateway",
+        "get-usage-plans"
+    ],
+    "apigw_usageplan_key": [
+        "aws",
+        "apigateway",
+        "get-usage-plan-keys",
+        "--usage-plan-id"
+    ],
+    "apigw_vpclink": [
+        "aws",
+        "apigateway",
+        "get-vpc-links"
+    ],
+    "sqs_list": [
+        "aws",
+        "sqs",
+        "list-queues",
+        "--query",
+        "QueueUrls",
+        "--queue-name-prefix"
+    ],
+    "sqs_attributes": [
+        "aws",
+        "sqs",
+        "get-queue-attributes",
+        "--attribute-names",
+        "All",
+        "--queue-url"
+    ],
+    "kms_aliases": [
+        "aws",
+        "kms",
+        "list-aliases",
+        "--query",
+        "Aliases[?starts_with(AliasName, `{}`)]"
+    ],
+    "kms_describe": [
+        "aws",
+        "kms",
+        "describe-key",
+        "--key-id"
+    ],
+    "kms_policy": [
+        "aws",
+        "kms",
+        "get-key-policy",
+        "--policy-name",
+        "default",
+        "--output",
+        "text",
+        "--key-id"
+    ],
+    "kinesis_datastream_list": [
+        "aws",
+        "kinesis",
+        "list-streams",
+        "--query",
+        "StreamNames[?starts_with(@, `{}`)]"
+    ],
+    "kinesis_datastream_describe": [
+        "aws",
+        "kinesis",
+        "describe-stream-summary",
+        "--stream-name"
+    ]
+}
